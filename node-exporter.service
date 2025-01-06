@@ -1,0 +1,9 @@
+[Unit]
+After=libvirtd.service
+
+[Service]
+ExecStart=/home/dxuser/work/node_exporter-1.8.2.linux-arm64/start.sh
+ExecStop=/home/dxuser/work/node_exporter-1.8.2.linux-arm64/stop.sh
+
+[Install]
+WantedBy=default.target
